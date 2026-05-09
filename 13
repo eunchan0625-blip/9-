@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+
+blood = {'A': 5, 'B': 3, 'O': 4, 'AB': 2}
+
+plt.bar(blood.keys(), blood.values())
+
+plt.title('Blood Type Frequency')
+plt.show()

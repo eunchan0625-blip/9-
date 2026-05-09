@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+import random
+
+x = []
+
+for i in range(1000):
+    x.append(random.normalvariate(0, 1))
+
+plt.hist(x, bins=20)
+
+plt.show()

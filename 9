@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+
+cat = plt.imread('/content/cat.3.jpg')
+
+plt.figure(figsize=(5, 5))
+plt.imshow(cat)
+plt.axis('off')
+
+plt.savefig('cat_save.png')
+plt.show()

@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+x = [80, 90, 70]
+y = [83, 88, 75]
+name = ['Jessica', 'Tom', 'Mike']
+
+plt.scatter(x, y)
+
+for i in range(len(name)):
+    plt.annotate(name[i], (x[i], y[i]))
+
+plt.show()

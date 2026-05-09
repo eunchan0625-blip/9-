@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+cat = plt.imread('/content/cat1.jpg')
+dog = plt.imread('/content/dog1.jpg')
+
+imgs = [cat, dog]
+labels = ['cat', 'dog']
+
+for i in range(len(imgs)):
+    plt.subplot(1, 2, i + 1)
+    plt.imshow(imgs[i])
+    plt.xticks([])
+    plt.yticks([])
+    plt.xlabel(labels[i])
+
+plt.show()

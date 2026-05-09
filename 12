@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import random
+
+dice1 = random.randint(1, 6)
+dice2 = random.randint(1, 6)
+
+img1 = plt.imread(f'/content/dice{dice1}.png')
+img2 = plt.imread(f'/content/dice{dice2}.png')
+
+plt.subplot(1, 2, 1)
+plt.imshow(img1)
+
+plt.subplot(1, 2, 2)
+plt.imshow(img2)
+
+plt.show()
